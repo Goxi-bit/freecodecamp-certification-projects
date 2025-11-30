@@ -1,0 +1,52 @@
+/* general page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  text-align: center;
+  margin: 20px;
+}
+
+#title {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+#description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* SVG centered */
+#treemap {
+  display: block;
+  margin: 0 auto;
+}
+
+/* tiles */
+.tile {
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
+
+/* legend container SVG (created in JS) */
+#legend svg {
+  margin: 1.5rem auto 0;
+  display: block;
+}
+
+/* tooltip – tests rely on JS to control visibility/opacity */
+#tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+/* optional: text inside tiles */
+text {
+  fill: #000000;
+}
