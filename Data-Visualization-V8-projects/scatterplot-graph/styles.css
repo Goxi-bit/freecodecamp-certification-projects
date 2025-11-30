@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+#title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+svg {
+  background: silver;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.dot {
+  stroke: black;
+  opacity: 0.8;
+}
+
+.dot:hover {
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  font-size: 14px;
+}
+
+#legend {
+  margin-top: 10px;
+  font-size: 14px;
+}
