@@ -1,1 +1,36 @@
+body {
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
+}
 
+#title {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+svg {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+  fill: green;
+  transition: fill 0.2s ease;
+}
+
+.bar:hover {
+  fill: yellow;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
