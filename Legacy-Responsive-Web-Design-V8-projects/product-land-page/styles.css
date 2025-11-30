@@ -1,0 +1,137 @@
+body{  box-sizing:border-box;
+margin: 0;
+padding: 0;
+background-color:hsl(276 100% 50%);
+
+}
+.page-wrapper{
+  position:relative;
+}
+header {
+  
+position: fixed;
+  top: 0;
+  width: 100%;
+  height:100px;
+  
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  z-index: 1000; /* Sicherstellen, dass der Header immer oben bleibt */
+  overflow: hidden;
+
+}
+
+
+/* Logo-Bereich */
+.logo {
+  display: flex; /* Flexbox für Logo-Inhalt */
+  align-items: center; /* Logo und Text vertikal zentrieren */
+}
+
+.logo h2 {
+  margin: 0 0 0 10px;
+  font-size:1.5rem;
+   /* Abstand zwischen Text und Bild */
+  }
+
+
+  
+
+
+
+.header-img {
+  width: 80px; /* 
+  Breite des Logos */
+  height: auto; /* Automatische Höhe für Proportionen */
+  display:flex;
+  
+}
+.nav-bar{
+  max-width:100%;
+  padding-right:40px;
+  display: flex;
+  justify-content:space-between;
+
+  
+  
+}
+/* Navigation */
+.nav-bar ul {
+  display: flex; /* Nav-Elemente in einer Zeile anordnen */
+  list-style: none; /* Standard-Punkte der Liste entfernen */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  margin-left: 20px; /* Abstand zwischen den Links */
+  text-decoration: none; /* Unterstreichung entfernen */
+  color: #333; /* Textfarbe */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+.nav-link:hover {
+  color: #007bff; /* Textfarbe bei Hover */
+  transition: color 0.3s ease; /* Glatte Farbänderung */
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; /* Navigation vertikal anordnen */
+    align-items: flex-start;
+  }
+}
+
+#hero {display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+}
+
+#form{
+  display:flex;
+  flex-direction:column;
+
+}
+#email{
+  width:200px;
+  height:auto;
+}
+#submit{
+  background-color:gold;
+  margin-top:10px;
+  padding:10px;
+}
+
+#features {
+  margin-top: 30px;
+  margin-left:30%;
+
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 20vw;
+  color: darkorange;
+}
+#how-it-works{
+  display:grid;
+  place-items:center;
+  max-width:100vw;
+  margin-top:100px;
+
+  
+}

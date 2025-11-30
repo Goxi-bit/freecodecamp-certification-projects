@@ -1,0 +1,87 @@
+.form-control{
+  font-size:1.5rem;
+  width: 85%;
+  padding:10px;
+  margin-bottom:15px;
+}
+
+.seleoption{
+  font-size:1.5rem;
+  width:90%;
+  padding:10px;
+  color:grey;
+  margin-bottom:15px;
+}
+
+#comment{
+  font-size:1.2rem;
+  width:90%;
+  padding-bottom:50px;
+  padding-top:5px;
+  padding-left:5px;
+  margin-bottom:15px;
+}
+
+.fcb{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:15px;
+}
+
+.fcb label{
+  display:block;
+  margin-bottom:15px;
+}
+
+.fcb input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.lq{
+  font-size:1.6rem;
+  margin-bottom:15px;
+}
+
+.lq label{
+  display:block;
+  margin-bottom:15px;
+}
+
+.lq input[type="radio"] {
+  margin-right:10px;
+}
+
+.submit-button{
+  width:90%;
+  margin-top:40px;
+  font-size:1.5rem;
+  padding:10px;
+  background-color:gold;
+  color:green;
+  font-weight:bold;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:30px;
+  cursor:pointer;
+  border:none;
+  border-radius:5px;
+}
+
+@media (max-width: 600px) {
+  .survey-form {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+
+  .form-control,
+  .seleoption,
+  #comment,
+  .submit-button {
+    width: 100%;
+  }
+}

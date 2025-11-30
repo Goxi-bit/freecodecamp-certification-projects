@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CodeCamp Survey</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="title">
+        CodeCamp Survey 
+      </h1>
+      <p id="description" class="description">
+        Help us to improve our site with your help!
+      </p>
+    </header>
+
+    <form id="survey-form" class="survey-form">
+
+      <!--Name input-->
+      <div class="form-group">
+        <label id="name-label" for="name">
+          <p>Name</p>
+          <input class="form-control" id="name" type="text" placeholder="Enter your Name" required="">
+        </label>
+
+        <!--Email input-->
+        <label id="email-label" for="email">
+          <p>Email</p>
+          <input class="form-control" id="email" type="email" placeholder="Enter your Email" required="">
+        </label>
+
+        <!--Age choose option-->
+        <label id="number-label" for="number">
+          <p>Age (optional)</p>
+          <input value="age" class="form-control" id="number" type="number" name="age" min="13" max="120" placeholder="Age">
+        </label>
+
+        <!-- Activity dropdown -->
+        <div class="activity">
+          <p>Choose and Activity</p>
+
+          <select id="dropdown" class="seleoption" name="activity">
+            <!--Option1-->
+            <option value="">Select an Option</option>
+            <!--Option2-->
+            <option name="gym" value="gym">Gym</option>
+            <!--Option3-->
+            <option name="coding" value="coding">Coding</option>
+            <!--Option4-->
+            <option name="climb" value="climb">Climbing</option>
+            <!--Option5-->
+            <option name="other" value="other">Others</option>
+          </select>
+        </div>
+
+        <!--Suggestion comments-->
+        <div class="comments">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comment" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <!--Future checkbox-->
+        <div class="fcb">
+          <p>What would be the best for the future?</p>
+          <!--checkbox1-->
+          <label for="bf_1">
+            <input id="bf_1" type="checkbox" name="highsalary" value="highsalary"> High Salary
+          </label>
+          <!--checkbox2-->
+          <label for="nogmo">
+            <input id="nogmo" type="checkbox" name="NOGMO" value="nongmo"> NON-GMO
+          </label>
+          <!--checkbox3-->
+          <label for="smoke_free">
+            <input id="smoke_free" type="checkbox" name="Nosmoke" value="nosmoke"> Smoke-Free
+          </label>
+        </div>
+
+        <!--Liked question-->
+        <div class="lq">
+          <p>Did you liked my Questions?</p>
+
+          <label for="dylmq_1">
+            <input id="dylmq_1" type="radio" name="dqa" value="definitely">Definitely
+          </label>
+
+          <label for="dylmq_2">
+            <input id="dylmq_2" type="radio" name="dqa" value="maybe">Maybe
+          </label>
+          
+          <label for="dylmq_3">
+            <input id="dylmq_3" type="radio" name="dqa" value="notsure">Not sure
+          </label>
+        </div>
+
+        <!-- Submit button -->
+        <div class="buttontaste">
+          <button id="submit" class="submit-button" type="submit">
+            Submit
+          </button>
+        </div>
+
+      </div> <!-- end .form-group -->
+    </form>
+  </div>
+</body>
+</html>

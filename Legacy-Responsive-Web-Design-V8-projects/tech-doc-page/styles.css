@@ -1,0 +1,82 @@
+/* Styling für die Navbar */
+.navbar {
+  height: 100vh; /* Die Navbar soll die volle Höhe des Bildschirms einnehmen */
+  width: 300px; /* Breite der Navbar */
+  position: fixed; /* Die Navbar bleibt fixiert */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Positioniert die Liste nach oben */
+  padding-top: 20px; /* Abstand oben für den Header */
+  background-color: white;
+  overflow:hidden;
+  
+  
+}
+
+/* Styling für den Header */
+.navbar header {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  
+  max-width:100%;
+  overflow:hidden;
+ 
+}
+
+/* Styling für die ungeordnete Liste */
+.navbar ul {
+    font-size:1.8rem;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+}
+
+/* Styling für jedes Listenelement */
+.navbar li {
+  padding:20px;
+  width: 100%; /*
+   Jedes Listenelement soll die volle Breite einnehmen */
+}
+
+/* Styling für die Links */
+.navbar .nav-link {
+    
+  display: block; /* Link als Blockelement */
+  width: 100%; /* Damit der Link die volle Breite des Listenelements einnimmt */
+  padding: 15px;
+  color: black; /* Textfarbe auf schwarz geändert */
+  text-decoration: none; /* Entfernt Unterstreichung */
+  text-align: left; /* Text linksbündig ausrichten */
+  border-bottom: 2px solid #fff; /* Fügt eine Umrandung unten hinzu */
+  box-sizing: border-box; /* Damit Padding und Umrandung die Gesamtgröße nicht beeinflussen */
+}
+
+/* Hover-Effekt für Links */
+.navbar .nav-link:hover {
+
+    
+  background-color:gold; /* Hintergrundfarbe beim Überfahren mit der Maus */
+}
+
+/* Entfernt die untere Umrandung des letzten Listenelements */
+.navbar .nav-link:last-child {
+  border-bottom: none;
+}
+
+.main-section{
+    display:block;
+    margin-left:300px;
+    top:0;
+    background-color:white;
+    
+}
+@media (max-width: 480px) {
+  .navbar {
+    width: 100%; /* Navbar nimmt 100% der Bildschirmbreite ein */
+    height: auto; /* Höhe passt sich automatisch an den Inhalt an */

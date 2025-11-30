@@ -1,0 +1,98 @@
+/* Grundlayout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #222;
+  display: flex;
+  justify-content: center;   /* Inhalt horizontal zentrieren */
+}
+
+/* Der graue Kasten in der Mitte */
+.container {
+  background-color: grey;
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Text in den Hauptbereichen zentrieren */
+main,
+#title,
+#tribute-info,
+blockquote,
+#endh3 {
+  text-align: center;
+  color: black;
+}
+
+/* Titelbereich */
+#title {
+  font-size: 10px;
+  background: rgba(222, 206, 32, 0.201);
+}
+
+.h1t1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.hpt2 {
+  padding-top: 15px;
+  font-weight: 200;
+}
+
+/* Bild */
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transform: scale(0.9);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Bildunterschrift */
+#img-caption {
+  padding: 10px;
+  margin-top: -20px;
+}
+
+/* Überschrift über der Timeline */
+#h3ertribut {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+/* Timeline-Liste */
+.timeblock {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeblock ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeblock li {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* Zitat */
+blockquote p {
+  margin-top: 50px;
+  font-style: italic;
+}
+
+/* Letzter Text */
+#endh3 {
+  margin-top: 20px;
+}
