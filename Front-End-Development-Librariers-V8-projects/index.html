@@ -1,1 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goxi – freeCodeCamp Front End Development Libraries Projects</title>
+
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-card: #111827;
+      --accent: #22c55e;
+      --accent-soft: rgba(34, 197, 94, 0.15);
+      --text-main: #f9fafb;
+      --text-sub: #9ca3af;
+      --border-soft: rgba(148, 163, 184, 0.35);
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.8);
+      --radius-lg: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #000 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 960px;
+    }
+
+    .glass {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));
+      border-radius: 24px;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      padding: 28px 22px 26px;
+      backdrop-filter: blur(16px);
+    }
+
+    header {
+      margin-bottom: 26px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      font-weight: 650;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-sub);
+      font-size: 0.97rem;
+      max-width: 640px;
+    }
+
+    .subtitle span {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .grid {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 960px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      position: relative;
+      background: radial-gradient(circle at top left, #1f2937 0, #020617 55%);
+      border-radius: var(--radius-lg);
+      padding: 14px 14px 16px;
+      border: 1px solid rgba(51, 65, 85, 0.7);
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+      transition: 0.18s ease-out;
+    }
+
+    .card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+      border-color: rgba(34, 197, 94, 0.6);
+      background: radial-gradient(circle at top right, #111827 0, #020617 60%);
+    }
+
+    .card-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 1.02rem;
+      font-weight: 550;
+      margin-bottom: 4px;
+    }
+
+    .card-desc {
+      font-size: 0.86rem;
+      color: var(--text-sub);
+      line-height: 1.4;
+      margin-bottom: 10px;
+      min-height: 40px;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: rgba(148, 163, 184, 0.9);
+      margin-top: 2px;
+    }
+
+    .chip {
+      padding: 3px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.95);
+      font-size: 0.72rem;
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <div class="glass">
+      <header>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>freeCodeCamp · Certificate</span>
+        </div>
+        <h1>Front End Development Libraries – Project Gallery</h1>
+        <p class="subtitle">
+          Built by <span>Goxi</span> as part of the freeCodeCamp Front End Development Libraries (v8) certification.
+          Click any project below to open the live demo.
+        </p>
+      </header>
+
+      <section class="grid">
+
+        <!-- RANDOM QUOTE MACHINE -->
+        <a class="card" href="random-quote-machine/" target="_blank">
+          <div class="card-icon">💬</div>
+          <div class="card-title">Random Quote Machine</div>
+          <div class="card-desc">
+            React-powered app that fetches random quotes and lets you share them on social media.
+          </div>
+          <div class="card-footer">
+            <span class="chip">React · API</span>
+            <span>View ➜</span>
+          </div>
+        </a>
+
+        <!-- MARKDOWN PREVIEWER -->
+        <a class="card" href="markdown-previewer/" target="_blank">
+          <div class="card-icon">✍️</div>
+          <div class="card-title">Markdown Previewer</div>
+          <div class="card-desc">
+            Live Markdown editor that previews formatted content in real time as you type.
+          </div>
+          <div class="card-footer">
+            <span class="chip">React</span>
+            <span>View ➜</span>
+          </div>
+        </a>
+
+        <!-- DRUM MACHINE -->
+        <a class="card" href="drum-machine/" target="_blank">
+          <div class="card-icon">🥁</div>
+          <div class="card-title">Drum Machine</div>
+          <div class="card-desc">
+            Interactive drum pads with keyboard support and visual feedback for each sound.
+          </div>
+          <div class="card-footer">
+            <span class="chip">React · Audio</span>
+            <span>View ➜</span>
+          </div>
+        </a>
+
+        <!-- JAVASCRIPT CALCULATOR -->
+        <a class="card" href="javascript-calculator/" target="_blank">
+          <div class="card-icon">🧮</div>
+          <div class="card-title">JavaScript Calculator</div>
+          <div class="card-desc">
+            Fully functional calculator handling chained operations and floating point values.
+          </div>
+          <div class="card-footer">
+            <span class="chip">React · Logic</span>
+            <span>View ➜</span>
+          </div>
+        </a>
+
+        <!-- 25 + 5 CLOCK -->
+        <a class="card" href="25plus5-clock/" target="_blank">
+          <div class="card-icon">⏰</div>
+          <div class="card-title">25 + 5 Clock</div>
+          <div class="card-desc">
+            Pomodoro-style timer with adjustable session and break lengths and audio alerts.
+          </div>
+          <div class="card-footer">
+            <span class="chip">React · Timer</span>
+            <span>View ➜</span>
+          </div>
+        </a>
+
+      </section>
+
+      <footer>
+        <span>Deployed with GitHub Pages</span>
+        <span>
+          Repo:
+          <a
+            href="https://github.com/Goxi-bit/freecodecamp-certification-projects/tree/main/Front-End-Development-Librariers-V8-projects"
+            target="_blank"
+          >
+            Goxi-bit / freecodecamp-certification-projects
+          </a>
+        </span>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
 
