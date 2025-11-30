@@ -1,0 +1,72 @@
+body {
+
+            background-color: yellow; /* Hintergrundfarbe des Bodys */
+
+            width: 100%; 
+
+            height: 100vh; /* Höhe des Viewports */
+
+            margin: 0; /* Entfernt den Standard-Außenabstand */
+
+            display: flex; /* Flexbox aktivieren */
+
+            justify-content: center; /* Zentriert den Container horizontal */
+
+            align-items: center; /* Zentriert den Container vertikal */
+
+        }
+
+.text_title
+ {
+     text-align:center;
+}
+.text_title h2 {
+
+    font-size: 2.0em; /* Schriftgröße */
+
+    color: darkblue; /* Schriftfarbe */ }
+
+        .t_input1 {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column; /* Elemente in einer Spalte anordnen */
+
+            background-color: green; /* Hintergrundfarbe des Containers */
+
+            height: auto; /* Höhe automatisch anpassen */
+
+            width: 400px; /* Feste Breite des Containers */
+
+            padding: 20px; /* Innenabstand */
+
+            border-radius: 35px; /* Abgerundete Ecken */
+
+            color: white; margin-left:20px;
+        }
+
+
+        #text-input {
+
+            margin: 15px 0; 
+            padding: 5px; 
+            width: 100%; 
+            background-color: white; 
+            color: black; 
+
+        }
+
+
+        #check-btn {
+
+            padding: 10px 20px; 
+            background-color: blue; 
+            color: gold; 
+            border: none; 
+            border-radius: 10px;
+            cursor: pointer; 
+        }

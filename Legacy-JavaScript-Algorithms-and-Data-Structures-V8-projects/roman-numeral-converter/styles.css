@@ -1,0 +1,105 @@
+body {
+
+               background-color: rgb(38, 38, 86);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: block; /* Kein Flexbox auf dem Body */
+        }
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Falls nötig */
+    height: 100%; /* Übernimmt die Höhe des Viewports */
+}   
+.t_t1 {
+
+    
+    width: 350px;
+    height: auto;
+    
+}
+
+.t_t1 h2 {
+    
+    font-size: 2.7em;
+    color: yellow;
+    text-align  :center;
+    
+    
+    
+    
+    
+    
+    
+
+}
+.btn-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+width:600px;
+height:350px;
+background: rgb(69, 217, 69);
+border-radius:10px;
+border: 4px solid ;
+margin:20px;
+
+
+
+
+
+
+
+}
+
+.bc_t {
+    font-size:2em;
+    text-align:center;
+    color:white;
+    font-weight:700;
+    margin-top:-20px;
+    
+    
+    
+    
+    
+}
+.ip_number {
+
+width: 20vw;
+height:10vh;
+font-size: 2em;
+text-align: center;
+
+margin-bottom:25px;
+
+    
+} 
+
+.convert-btn {
+
+    width: 20vw;
+height:10vh;
+background:gold;
+font-size:1.8em;
+font-weight: 500;
+    
+}
+
+.ot_1 {
+     display:flex;
+   
+    justify-content:center;
+    align-items:center;
+width:600px;
+height:10vh;
+background: rgb(69, 217, 69);
+border-radius:10px;
+border: 4px solid ;
+margin:20px;
+
+}

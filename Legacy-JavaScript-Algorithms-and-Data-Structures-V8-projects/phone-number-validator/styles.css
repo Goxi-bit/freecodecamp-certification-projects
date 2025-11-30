@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --phone-bg: #fff3f32a;
+  --screen-bg: rgba(255, 255, 255, 0.536);
+  --button-bg: linear-gradient(135deg, #74636c, #8f94fb);
+  --button-hover: linear-gradient(135deg, #3a3fc8, #7278fb);
+  --text-color: black;
+}
+
+body {
+  background-color: #3b3b4f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #0a0a23;
+  position: relative;
+  overflow: auto;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  background: linear-gradient(to top, #bf0a30 30%, #fff 40%, #fff 33%, #0033cc 70%);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Digit container stays in the background */
+.digit-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none; /* Prevents digits from blocking interactions */
+  z-index: -1; /* Digits appear behind the phone */
+  overflow: hidden;
+}
+
+/* Digit styling */
+.digit {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  animation: rotateDigits 10s linear infinite;
+}
+
+/* Animation for rotation */
+@keyframes rotateDigits {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.t_t1 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  padding: 30px;
+}
+
+.btn-container {
+  position: relative;
+  background: var(--phone-bg);
+  width: 300px;
+  height: 520px;
+  margin-top: 70px;
+  border-radius: 25px;
+  border: 10px solid black;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.bc_t {
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user-input {
+  width: 85%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  text-align: center;
+  background: var(--screen-bg);
+  color: var(--text-color);
+  outline: none;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.results-sum {
+  margin-top: 10px;
+  width: 90%;
+  height: 300px;
+  overflow-y: auto;
+  background: var(--screen-bg);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.results-div {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px; /* Spacing between the buttons */
+  margin-top: 15px;
+}
+
+.btn-design {
+  cursor: pointer;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: var(--text-color);
+  background: var(--button-bg);
+  transition: all 0.3s;
+}
+
+.btn-design:hover {
+  background: var(--button-hover);
+  transform: scale(1.05);
+}

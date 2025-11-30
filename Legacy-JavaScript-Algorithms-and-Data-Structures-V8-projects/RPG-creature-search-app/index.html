@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creature Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Creature Search</h1>
+
+<main>
+  <div class="containers">
+
+    <p class="poketext">Creature Name or ID</p>
+
+    <div class="input-button">
+      <input id="search-input" required>
+      <button id="search-button" type="button">Search</button>
+    </div>
+
+    <div class="ptf-pdf">
+
+      <div class="ptf">
+
+        <!-- REQUIRED BY FCC -->
+        <div id="creature-name-id">
+          <span id="creature-name"></span>
+          <span id="creature-id"></span>
+        </div>
+
+        <div id="size">
+          <span id="weight"></span>
+          <span id="height"></span>
+        </div>
+
+        <div id="poke-pic">
+          <img id="sprite" src="">
+        </div>
+
+        <div id="types"></div>
+      </div>
+
+      <div class="pdf">
+        <table>
+          <tr>
+            <th>Base</th>
+            <th>Stats</th>
+          </tr>
+          <tr><td>HP:</td><td id="hp"></td></tr>
+          <tr><td>Attack:</td><td id="attack"></td></tr>
+          <tr><td>Defense:</td><td id="defense"></td></tr>
+          <tr><td>Sp. Attack:</td><td id="special-attack"></td></tr>
+          <tr><td>Sp. Defense:</td><td id="special-defense"></td></tr>
+          <tr><td>Speed:</td><td id="speed"></td></tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

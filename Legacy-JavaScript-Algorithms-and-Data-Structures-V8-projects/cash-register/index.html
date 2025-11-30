@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   <h1>Cash Register</h1>
+<main> 
+   
+  
+<p>Cash In Field:</p>
+
+<div id="change-due"></div>
+
+<div class="input">
+<input id="cash" type="number" name="amount"  min="0" step="0.01" required>
+<button type="button" id="purchase-btn">Purchase</button>
+</div>
+
+
+<div class="containers">
+
+<div class="totalscore" id="totalscore">
+  <p>Total: $1.87</p>
+</div>
+<div class="list-price"></div>
+  <p>Change in drawer:</p>
+  <p class="currency" id="penny"> Pennies:               $1.01   </p>
+  <p class="currency" id="nickel"> Nickel:              $2.05   </p>
+  <p class="currency" id="dimes"> Dimes:                $3.1   </p>
+  <p class="currency" id="quarters"> Quarters:          $4.25   </p>
+  <p class="currency" id="ones"> Ones:            $90   </p>
+  <p class="currency" id="fives"> Fives:        $55  </p>
+  <p class="currency" id="tens"> Tens:         $20   </p>
+  <p class="currency" id="twenties"> Twenties:      $60  </p>
+  <p class="currency" id="hundreds"> Hundreds: $100   </p>
+</div>
+
+ </div>
+
+
+</main>
+    <script src="script.js" ></script>
+</body>
+</html>
